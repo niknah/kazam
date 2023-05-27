@@ -14,6 +14,8 @@ pip3 install Xlib Pycairo PyGObject
 bash bin/run_local_dev.sh
 ```
 
+If you're using debian 12, Ubuntu 23 or higher, you have the install the equivalent packages with `sudo apt install python3-xlib python-gi-dev python3-cairo-dev`.  Or use `pipx` instead of pip.
+
 ## Installation - stable release
 
 If you are using Ubuntu then stable version (1.4.x) is available from universe repository. You can find it in Ubuntu Software Center or install it from the terminal with the following command:
@@ -126,7 +128,7 @@ Your next best bet is HUFFYUV format, which is a little bit friendlier on disk b
 
 - *When taking a screenshot of a preselected window with window decorations you have to make sure that your window is not covered by other windows.*
 
-
+- *If the Mouse/keyboard actions do not appear, use [screenkey](https://gitlab.com/screenkey/screenkey).  Example: `screenkey --opacity 0.3 -M -g 500x500 --position=fixed`
 
 
 ## Debugging & reporting problems
