@@ -14,7 +14,7 @@ pip3 install Xlib Pycairo PyGObject
 bash bin/run_local_dev.sh
 ```
 
-If you're using debian 12, Ubuntu 23 or higher, you have the install the equivalent packages with `sudo apt install python3-xlib python-gi-dev python3-cairo-dev`.  Or use `pipx` instead of pip.
+If you're using debian 12, Ubuntu 23 or higher, you have the install the equivalent packages with `sudo apt install python3-xlib python-gi-dev python3-cairo-dev gir1.2-keybinder3.0 gir1.2-gudev-1.0`.  
 
 ## Installation - stable release
 
