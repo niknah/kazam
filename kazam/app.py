@@ -21,7 +21,7 @@
 #       MA 02110-1301, USA.
 
 import os
-import imp
+import importlib
 import sys
 import locale
 import shutil
@@ -160,7 +160,7 @@ class KazamApp(GObject.GObject):
         #
 
         try:
-            imp.find_module('Xlib')
+            importlib.machinery.PathFinder.find_spec("Xlib", [""])
             self.keypress_viewer = KeypressViewer()
             self.keypress_viewer.connect("keypress", self.cb_got_keypress)
             self.keypress_detect = True
